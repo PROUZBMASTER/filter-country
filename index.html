@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="op">
+    <div class="card">
+        <h1>Countries</h1>
+    
+    <div class="city">
+        <form class="formlis">
+    
+            <input type="text" placeholder="Search..." class="inputText">
+        </form>
+     
+    </div>
+    <div class="list">
+    
+        <ul class="bigList">
+            <li class="list_iteam">uzbekistan</li><hr>
+            <li class="list_iteam">america</li><hr>
+            <li class="list_iteam">turkiya</li><hr>
+            <li class="list_iteam">china</li><hr>
+            <li class="list_iteam">koreya</li><hr>
+            <li class="list_iteam">london</li><hr>
+            <li class="list_iteam">mexico</li><hr>
+            <li class="list_iteam">dubai</li><hr>
+            <li class="list_iteam">brazil</li><hr>
+            <li class="list_iteam">misr</li><hr>
+            <li class="list_iteam">pakiston</li><hr>
+        </ul>
+    </div>
+    </div>
+</div>
+
+  
+
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background: url(./img/0001.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+    h1{
+        text-align: center;
+        color: black;
+        margin-bottom: 5px;
+    }
+    .inputText{
+        height: 28px;
+        padding-left: 10px;
+        border-radius: 15px 5px 15px 5px;
+        border: 3px solid greenyellow;
+    }
+    .inputText:focus{
+        outline: none;
+        border: 3px solid gray;
+    }
+  
+    .city{
+        margin-bottom: 20px;
+        text-align: center;
+
+    }
+    .list{
+        margin: auto;
+        width: 250px;
+        height: 400px;
+     
+    }
+    .bigList{
+        list-style: none;
+        padding-left: 0;
+    }
+    .list_iteam{
+        margin: 5px;
+        color: rgb(101, 103, 104);
+        font-size: 18px;
+        font-weight: 600;
+        }
+    .card{
+        background: url(https://s3.amazonaws.com/logicwebmedia/wp-content/uploads/20170311190828/understanding-serps-search-engine-results-page.jpg);
+        background-size: contain;
+        /* background: url(./img/flags-world-map-1Hqk.jpg); */
+        /* background-color: aliceblue; */
+        border-radius: 20px;
+        margin: auto;
+        margin-top:100px;
+        border: 4px solid rgba(28, 199, 218, 0.797);
+        width: 350px;
+        height: 550px;
+    }
+    hr{
+        border-width: 1.5px;
+        border-color:  ghostwhite;
+    }
+    @media (max-width: 575px) {
+        body{
+            height: 700px;
+        }
+        .card{
+            border-radius: 20px;
+        margin: auto;
+        margin-top:50px;
+        border: 4px solid rgba(28, 199, 218, 0.797);
+        width: 300px;
+        height: 450px;
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 50px;
+        }
+        .op{
+           display: flex;
+           justify-content: center;
+        }
+    }
+  </style>
+
+    <script  src="./countres.js"></script>
+</body>
+</html>
